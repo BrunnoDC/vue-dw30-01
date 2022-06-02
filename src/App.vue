@@ -1,17 +1,12 @@
+<script setup>
+import HeaderComp from "@/components/template/HeaderComp.vue";
+import RodapeComp from "./components/template/RodapeComp.vue";
+</script>
+
 <template>
-<header class="menu-superior" >
-    <div class="menu-esquerdo" >
-    <span> Home </span>
-    <span>|</span>
-    <span> Times </span>
-    <span>|</span>
-    <span>Jogadores</span>
-    </div>
-    <div class="menu-direito" >
-    <span>Sair</span>
-    </div>
-  </header>
-<RouterView/>
+  <HeaderComp />
+  <RouterView />
+  <RodapeComp />
 </template>
 
 <style>
@@ -42,14 +37,5 @@ main {
   height: 80%;
   background-color: lightskyblue;
   color: white;
-}
-
-header.menu-superior {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header span {
-  padding: 0 20px;
 }
 </style>
